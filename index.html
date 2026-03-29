@@ -9,140 +9,78 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" hreft="css/boostrap.min.css">
 
+      <style>
+        body { background-color: #000000; color: #E0E8F9; font-family: Arial, sans-serif; }
+        .container { max-width: 900px; margin: auto; }
+        .header { text-align: center; padding: 20px; }
+        .header h1 { font-size: 28px; font-weight: bold; }
+        .header p { font-size: 18px; }
+        .section-title { color: #5BC0BE; border-bottom: 2px solid #5BC0BE; padding-bottom: 5px; margin-bottom: 15px; }
+        .card { background-color: #5BC0BE; color: rgb(0, 0, 0); border-radius: 10px; padding: 15px; margin-bottom: 10px; }
+        .icon { font-size: 18px; margin-right: 10px; color: #5BC0BE; }
+    </style>
 </head>
 <body>
-
-    <header>
-        <h1 class="text-center text-primary fst-italic">Práctica de Estilizado con Bootstrap</h1>
-        <p class= "fs-5 text-center">
-            En esta actividad deberás aplicar clases de Bootstrap para mejorar la
-            presentación de los elementos de esta página
-        </p>
-    </header>
-
-    <main>
-        <section>
-            <h2 class ="text-center text-secondary fst-italic">Tipografía</h2>
-            <p class= "fs-5 text-center">
-                Bootstrap permite dar formato al texto de manera rápida y ordenada.
-                En esta sección puedes aplicar estilos al título, subtítulo y párrafos.
-            </p>
-            <p class= "fs-5 text-center">
-                También puedes resaltar información importante y mejorar la alineación
-                del contenido para hacerlo más atractivo visualmente.
-            </p>
-        </section>
-
-
-
-
-        <section>
-    <div class="container text-center">
-  <div class="row g-2 justify-content-center">
-
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <div class="p-3">
-        <button type="button" class="btn btn-success w-100">Guardar</button>
-      </div>
+    <div class="container mt-5">
+        <div class="header" "style="height: 100px; padding: 20px;">
+            <img src="Luisito.jpg" alt="Adolfo Urbina" class="img-fluid rounded-circle mb-3" width="150">
+            <h1 class ="text-info fst-italic">Luis Fernando Gutierrez Soza</h1>
+            <p>Máster en Desarrollo y creación de páginas web</p>
+            <p><i class="fas fa-map-marker-alt icon"></i> Blufields, Nicaragua</p>
+        </div>
+        
+        <div class="text-center mb-4">
+            <p><i class="fas fa-envelope icon"></i> Luisfgz419@gmail.com</p>
+            <p><i class="fas fa-phone icon"></i> 84519576</p>
+        </div>
+        
+        <h3 class="section-title"><i class="fas fa-user icon"></i>Perfil Profesional</h3>
+        <p>Futuro profesional en formación que posee conocimientos en el uso, diseño y aplicación de tecnologías digitales orientadas al proceso de enseñanza-aprendizaje. Capacitado para integrar herramientas informáticas en contextos educativos, desarrollar recursos digitales interactivos y apoyar la innovación pedagógica mediante el uso de software, plataformas virtuales y metodologías tecnológicas.</p>
+        
+        <h3 class="section-title"><i class="fas fa-briefcase icon"></i>Experiencia Laboral</h3>
+        <div class="card">
+            <h5>Creacion de proceso de matricula en Harvar</h5>
+            <p><i class="fas fa-calendar-alt icon"></i> 5 años de experiencia</p>
+            <p>Alto dominio de conocimientos y fundamentos teoricos sobre tecnologia actual.</p>
+        </div>
+        <div class="card">
+            <h5>Desarrollador de aplicaciones en unity</h5>
+            <p><i class="fas fa-calendar-alt icon"></i> 3 años de experiencia</p>
+            <p>Poseedor de primer lugar en HACKATHON, tras exponer su aplicacion Curaní Son.</p>
+        </div>                                        
+        
+        
+        <h3 class="section-title"><i class="fas fa-tools icon"></i>Habilidades</h3>
+        <ul>
+            <li>Desarrollo ágil con metodologías SCRUM y Kanban</li>
+            <li>Experiencia en optimización de aplicaciones para alto rendimiento</li>
+            <li>Habilidades avanzadas en diseño de sistemas y bases de datos</li>
+            <li>Docencia e-learning y formación en entornos virtuales</li>
+        </ul>
+        
+        <h3 class="section-title"><i class="fas fa-laptop-code icon"></i>Tecnologías</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>Java, PHP, C#,</li>
+                    <li>HTML, CSS, Bootstrap,</li>
+                    <li>Flutter, Ionic</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Android </li>
+                    <li>Linux</li>
+                    <li>IOs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3 class="section-title"><i class="fas fa-language icon"></i>Idiomas</h3>
+        <p>Inglés - Nivel A1</p>
     </div>
 
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <div class="p-3">
-        <button type="button" class="btn btn-secondary w-100">Editar</button>
-      </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <div class="p-3">
-        <button type="button" class="btn btn-danger w-100">Eliminar</button>
-      </div>
-    </div>
-
-    <div class="col-sm-12 col-md-6 col-lg-3">
-      <div class="p-3">
-        <button type="button" class="btn btn-dark w-100">Cancelar</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-        </section>
-
-
-
-
-        <section>
-            <div class="container mt-4">
-
-  <div class="row">
-    <div class="col-12">
-      <h2 class="text-center text-secondary fst-italic">Tabla de estudiantes</h2>
-      <p class="fs-5 text-center">
-        Da formato a la siguiente tabla usando las clases de Bootstrap para
-        mejorar su legibilidad y presentación.
-      </p>
-    </div>
-  </div>
-
-  <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-10 col-lg-8">
-
-      <div class="table-responsive">
-        <table class="table table-bordered table-striped table-hover text-center">
-
-          <thead class="table-dark">
-            <tr>
-              <th>ID</th>
-              <th>Nombre</th>
-              <th>Carrera</th>
-              <th>Promedio</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Luis Gutierrez</td>
-              <td>Informatica Educativa</td>
-              <td>100</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Victor Miamor</td>
-              <td>Informática Educativa</td>
-              <td>60</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Suneida Pancho</td>
-              <td>Ingeniería en Sistemas</td>
-              <td>70</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Pecho</td>
-              <td>Fisica-Matematica</td>
-              <td>100</td>
-            </tr>
-          </tbody>
-
-        </table>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Actividad práctica de Bootstrap</p>
-    </footer>
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src= "js/boostrap.min.js"></script>
 </body>
 </html> 
