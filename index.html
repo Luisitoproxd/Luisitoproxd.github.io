@@ -3,47 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Árbol de Amor Animado</title>
-    <!-- Autoría y derechos -->
-    <meta name="author" content="Zero">
-    <meta name="copyright" content="Zero - Código libre no comercial">
-    <meta name="description" content="Árbol de Amor Animado: una sorpresa interactiva y romántica para dedicar a tu pareja o ser querido. Código libre para uso personal, educativo o de inspiración.">
-    <meta name="keywords" content="amor, sorpresa, romántico, dedicatoria, animación, árbol, corazones, pareja, aniversario, regalo digital">
-    <meta name="robots" content="index, follow">
-    <!-- Estilos -->
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/style.mobile.css" media="only screen and (max-width: 600px)">
-    <style>
-      .tree-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 400px;
-        height: 400px;
-        z-index: 2;
-      }
-      .animated-heart {
-        transform-origin: center;
-        animation: beat 1s infinite;
-      }
-      @keyframes beat {
-        0%, 100% { transform: scale(1); }
-        20% { transform: scale(1.1); }
-        40% { transform: scale(0.95); }
-        60% { transform: scale(1.08); }
-        80% { transform: scale(1); }
-      }
+    <title>Práctica de Estilizado con Bootstrap</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" hreft="css/boostrap.min.css">
+
+      <style>
+        body { background-color: #000000; color: #E0E8F9; font-family: Arial, sans-serif; }
+        .container { max-width: 900px; margin: auto; }
+        .header { text-align: center; padding: 20px; }
+        .header h1 { font-size: 28px; font-weight: bold; }
+        .header p { font-size: 18px; }
+        .section-title { color: #5BC0BE; border-bottom: 2px solid #5BC0BE; padding-bottom: 5px; margin-bottom: 15px; }
+        .card { background-color: #5BC0BE; color: rgb(0, 0, 0); border-radius: 10px; padding: 15px; margin-bottom: 10px; }
+        .icon { font-size: 18px; margin-right: 10px; color: #5BC0BE; }
     </style>
 </head>
 <body>
-    <div id="floating-objects"></div>
-    <div class="dedication-text" id="dedication-text">
-      <div class="signature" id="signature"></div>
+    <div class="container mt-5">
+        <div class="header" "style="height: 100px; padding: 20px;">
+            <img src="Luisito.jpg" alt="Adolfo Urbina" class="img-fluid rounded-circle mb-3" width="150">
+            <h1 class ="text-info fst-italic">Luis Fernando Gutierrez Soza</h1>
+            <p>Máster en Desarrollo y creación de páginas web</p>
+            <p><i class="fas fa-map-marker-alt icon"></i> Blufields, Nicaragua</p>
+        </div>
+        
+        <div class="text-center mb-4">
+            <p><i class="fas fa-envelope icon"></i> Luisfgz419@gmail.com</p>
+            <p><i class="fas fa-phone icon"></i> 84519576</p>
+        </div>
+        
+        <h3 class="section-title"><i class="fas fa-user icon"></i>Perfil Profesional</h3>
+        <p>Futuro profesional en formación que posee conocimientos en el uso, diseño y aplicación de tecnologías digitales orientadas al proceso de enseñanza-aprendizaje. Capacitado para integrar herramientas informáticas en contextos educativos, desarrollar recursos digitales interactivos y apoyar la innovación pedagógica mediante el uso de software, plataformas virtuales y metodologías tecnológicas.</p>
+        
+        <h3 class="section-title"><i class="fas fa-briefcase icon"></i>Experiencia Laboral</h3>
+        <div class="card">
+            <h5>Creacion de proceso de matricula en Harvar</h5>
+            <p><i class="fas fa-calendar-alt icon"></i> 5 años de experiencia</p>
+            <p>Alto dominio de conocimientos y fundamentos teoricos sobre tecnologia actual.</p>
+        </div>
+        <div class="card">
+            <h5>Desarrollador de aplicaciones en unity</h5>
+            <p><i class="fas fa-calendar-alt icon"></i> 3 años de experiencia</p>
+            <p>Poseedor de primer lugar en HACKATHON, tras exponer su aplicacion Curaní Son.</p>
+        </div>                                        
+        
+        
+        <h3 class="section-title"><i class="fas fa-tools icon"></i>Habilidades</h3>
+        <ul>
+            <li>Desarrollo ágil con metodologías SCRUM y Kanban</li>
+            <li>Experiencia en optimización de aplicaciones para alto rendimiento</li>
+            <li>Habilidades avanzadas en diseño de sistemas y bases de datos</li>
+            <li>Docencia e-learning y formación en entornos virtuales</li>
+        </ul>
+        
+        <h3 class="section-title"><i class="fas fa-laptop-code icon"></i>Tecnologías</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>Java, PHP, C#,</li>
+                    <li>HTML, CSS, Bootstrap,</li>
+                    <li>Flutter, Ionic</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Android </li>
+                    <li>Linux</li>
+                    <li>IOs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3 class="section-title"><i class="fas fa-language icon"></i>Idiomas</h3>
+        <p>Inglés - Nivel A1</p>
     </div>
-    <div class="countdown" id="countdown"></div>
-    <div class="tree-container" id="tree-container"></div>
-    <audio src="Music/Until I Found You(M4A_128K)_1.m4a" id="bg-music" preload="auto"></audio>
-    <script src="Js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html>
+</html> 
